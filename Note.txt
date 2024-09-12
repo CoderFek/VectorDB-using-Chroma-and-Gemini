@@ -1,0 +1,21 @@
+**********************************************************************************************
+
+
+When installing google-generativeai using pip make sure to uninstall the latest version of
+protobuf as it will be installed with other packages. There are some package conflicts between:
+'opentelemetry-proto' and 'grpcio-status' regarding the versions of protobuf.
+
+For smoother experience:
+
+install the requirements directly using <pip install -r requirements.txt>
+
+or
+
+add these to your installation:
+
+opentelemetry-proto==1.27.0
+grpcio-status==1.48.0
+protobuf==4.21.12
+
+
+*************************************************************************************************
